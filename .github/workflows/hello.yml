@@ -1,9 +1,9 @@
-name: My first Workflow
+name: PR Workflow
 
 on:
   pull_request:
     branches:
-      - main   
+      - main
 
 jobs:
   pr-check:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Print message
-        run: echo "PR is created successfully!"
+        run: echo "PR triggered!"
 
       - name: Print name
         run: echo "Rashi"
