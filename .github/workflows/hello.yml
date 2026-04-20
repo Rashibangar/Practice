@@ -13,9 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: list file
-        uses: ls
-
       - name: Print message
         run: echo "Push triggered!"
 
@@ -29,9 +26,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: list file
-        uses: ls
 
       - name: Second job message
         run: echo "Job 2 running after Job 1"
