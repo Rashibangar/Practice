@@ -1,17 +1,21 @@
 name: use action workflow
-on: push
+
+on: 
+  push:
+
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: list file
+      - name: List files
         run: ls
 
-      - name: setup node
-        run: actions/setup-node@v4
-
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        
       - name: Print Node version
         run: node -v
