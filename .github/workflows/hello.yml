@@ -19,3 +19,9 @@ jobs:
         
       - name: Print Node version
         run: node -v
+
+      - name: Install dependency
+        run: npm i
+
+      - name: Starting test
+        run: npm run test
