@@ -16,12 +16,12 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        
+
       - name: Print Node version
         run: node -v
 
       - name: Install dependency
-        run: npm i
+        run: npm install
 
       - name: Starting test
-        run: npm run test
+        run: npm test
