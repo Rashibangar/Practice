@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "lint": "echo \"Lint passed\"",
-  "test": "echo \"Test passed\"",
-  "build": "echo \"Build successful\""
-},
+    "lint": "echo \"Lint passed\"",
+    "test": "echo \"Test passed\"",
+    "build": "echo \"Build successful\""
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Rashibangar/Practice.git"
@@ -22,7 +22,11 @@
   "homepage": "https://github.com/Rashibangar/Practice#readme",
   "dependencies": {
     "body-parser": "^2.2.2",
-    "eslint": "^10.2.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "globals": "^17.5.0"
   }
 }
